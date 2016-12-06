@@ -53,14 +53,13 @@ h1, h2, h3 {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  
   background-color: white;
 }
 
 .navbar-default .navbar-toggle {
   border: 1px solid white;
   &:hover, &:focus {//includes all of the states
-    background-color: #4CB8C4;
+    background-color: #4CB8C4;//sass nesting 
   }
 }
 
