@@ -39,15 +39,28 @@ h1, h2, h3 {
 }
 
 .navbar-brand {
-  font-family: 'Raleway', sans serif; //sets font for the text in those tags
   font-weight: 800;                    //sets font for the text in those tags
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {  /* has to be specific as it is under navbar-default */
   color: white;
+  font-family: 'Raleway', sans serif; //sets font for the text in those tags
   &:hover {
     color: white;
     opacity: 0.75;
+    font-family: 'Raleway', sans serif; //sets font for the text in those tags
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 1px solid white;
+  &:hover, &:focus {//includes all of the states
+    background-color: #4CB8C4;
   }
 }
 
