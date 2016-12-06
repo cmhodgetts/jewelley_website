@@ -18,11 +18,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand"><icon class="fa fa-diamond"> </icon>Jewellery</a>
+      <%= link_to root_path, class: "navbar-brand" do %> <!-- Best practise for adding links using rails -->
+      <i class="fa fa-diamond"></i>
+      Jewellery
+      <% end %>                                     <!-- Best practise for adding links using rails -->
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/about">About</a></li>
+        <li><%= link_to "About", about_url %></li>  <!-- Best practise for adding links using rails -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
