@@ -28,7 +28,8 @@ background: linear-gradient(to left, #4CB8C4 , #3CD3AD); /* W3C, IE 10+/ Edge, F
 
 //Typography Styles
 h1, h2, h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif; //sets font for the text in those tags
+
 }
 
 //Nav styles
@@ -37,7 +38,10 @@ h1, h2, h3 {
   
 }
 
-
+.navbar-brand {
+  font-family: 'Raleway', sans serif; //sets font for the text in those tags
+  font-weight: 800;                    //sets font for the text in those tags
+}
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {  /* has to be specific as it is under navbar-default */
   color: white;
