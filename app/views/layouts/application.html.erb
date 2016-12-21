@@ -31,6 +31,11 @@
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
-        <%= yield %>
+  <div class="container">
+    <% flash.each do |type, msg| %> <!-- Message that says if form was sent, found in contacts_controller.rb -->
+      <%= content_tag :div, msg, class: " alert alert-#{type}" %> <!-- Uses boostrap within rails to add style to danger and success messages (see bootsrap website on how to style), flash in contacts_controller needs to say danger -->
+    <% end %>
+  </div>
+    <%= yield %>
   </body>
 </html>

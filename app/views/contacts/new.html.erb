@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <div class="row">
       <h3 class="text-center">Contact Form</h3>
+      
       <div class="col-md-4 col-md-offset-4"> <!-- This line shows how many collums from the middle this form will use up -->
-        <%= flash[:error] %> <!-- Message that says if form was sent, found in contacts_controller.rb -->
         <div class="well">
         <%= form_for @contact do |f| %> <!-- Rails way to make a form @contact is connected to contacts controller and contact.rb -->
           <div class="form-group">
